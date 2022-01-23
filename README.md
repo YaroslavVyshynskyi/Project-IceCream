@@ -1,3 +1,4 @@
+https://yaroslavvyshynskyi.github.io/Project-IceCream/
 # Parcel boilerplate
 
 ## Скрытые файлы

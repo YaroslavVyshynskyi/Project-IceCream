@@ -1,0 +1,116 @@
+.customer-reviews {
+  // padding-top: 80px;
+  padding-bottom: 86px;
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.customer-reviews__img {
+  margin-bottom: 30px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.customer-reviews__feedback {
+  position: relative;
+  display: inline-flex;
+  z-index: 1;
+  margin-bottom: 52px;
+  padding: 45px 50px 20px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+
+  text-align: center;
+  color: $secondary-text-color;
+
+  background-color: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 42px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 34px;
+  }
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+
+    height: 40px;
+    width: 54px;
+    top: 31px;
+    left: 57px;
+    background-image: url('/images/customers/quotes.png');
+    background-size: contain;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: 2;
+    display: block;
+
+    content: '';
+    height: 4px;
+    width: 32px;
+    background-image: url('/images/customers/red-dots.svg');
+
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (min-width: 768px) {
+      bottom: -24px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: -15px;
+    }
+  }
+}
+
+.customer-reviews__feedback--underline {
+  background-image: repeating-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0) 29px,
+    #e1e1e1 0,
+    #e1e1e1 30px
+  );
+}
+
+.customer-reviews__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+
+  text-align: center;
+  color: $secondary-text-color;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  content: ' ';
+  background-image: url('/images/customers/home.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @media screen and(min-width:480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 730px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1080px;
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}

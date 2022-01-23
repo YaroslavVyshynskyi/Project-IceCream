@@ -1,0 +1,127 @@
+/*modal*/
+.overlay {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay.products__modal--is-hidden_pink,
+.overlay.products__modal--is-hidden_brown,
+.overlay.products__modal--is-hidden_green {
+  opacity: 0.2;
+  pointer-events: none;
+  visibility: hidden;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// .overlay.products__modal--is-hidden_brown {
+//   opacity: 0.2;
+//   pointer-events: none;
+//   visibility: hidden;
+//   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .overlay.products__modal--is-hidden_green {
+//   opacity: 0.2;
+//   pointer-events: none;
+//   visibility: hidden;
+//   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+.modal__products {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 450px;
+  width: 90%;
+  max-height: 100%;
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 45px;
+  opacity: 1;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+}
+.btn-products__close {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: inherit;
+}
+.modal__products--icecream {
+  background: $products-bg-one;
+  &::after {
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    content: '';
+    background-image: url(../images/products/products-mobile-one.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.modal__products--icecoffee {
+  background: $products-bg-two;
+  &::after {
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    content: '';
+    background-image: url(../images/products/products-mobile-three.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.modal__products--milkshakes {
+  background: $products-bg-three;
+  &::after {
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    content: '';
+    background-image: url(../images/products/products-mobile-two.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.modal__title {
+  margin-bottom: 20px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $primary-text-color;
+}
+.modal__text {
+  font-family: DM Sans;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: $primary-text-color;
+}

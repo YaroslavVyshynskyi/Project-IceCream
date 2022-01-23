@@ -1,0 +1,114 @@
+<section class="hero">
+    <div class="hero__container container">
+        <div class="hero__top-wrap">
+            <div class="hero__left-wrap">
+                <h1 class="hero__title" id="hero">ice cream made with <span>passion</span></h1>
+                <div class="hero__btn-wraper">
+                    <a href="#products" class="hero__first-btn scrollto">Products</a>
+                    <a href="#about" class="hero__second-btn scrollto">How it’s made?</a>
+                </div>
+            </div>
+            <ul class="hero-list">
+                <li class="hero-list__item">
+                    <span></span>
+                    <p class="hero-list__number">16</p>
+                    <p class="hero-list__text">cafes</p>
+                </li>
+                <li class="hero-list__item">
+                    <span></span>
+                    <p class="hero-list__number">23</p>
+                    <p class="hero-list__text">food trucks</p>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="hero-card">
+            <div class="hero-card__thumb animate__animated animate__bounce">
+                <picture>
+                    <source srcset="./images/hero/hero-milk-desktop.png 1x, ./images/hero/hero-milk-desktop2x.png 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/hero/hero-milk.png 1x, ./images/hero/hero-milk2x.png 2x"
+                        media="(min-width: 768px)">
+        
+                    <img src="./images/hero/hero-milk-desktop2x.png" alt="milk">
+                </picture>
+            </div>
+            <div class="hero-card__wrap">
+                <p class="hero-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et</p>
+                <button type="button" href="" class="hero-card__link" data-hero-open>
+                    <svg class="hero-card__icon" width="9px" height="9px">
+                        <use href="./images/sprite.svg#arrow-long"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hero__img-voomen-thumb animate__animated animate__heartBeat">
+            <picture>
+                <source srcset="./images/hero/hero-woman-desktop.png 1x, ./images/hero/hero-woman-desktop2x.png 2x"
+                    media="(min-width: 1200px)">
+                <source srcset="./images/hero/hero-woman-tablet.png 1x, ./images/hero/hero-woman-tablet2x.png 2x"
+                    media="(min-width: 768px)">
+                <img src="./images/hero/hero-woman-desktop2x.png" alt="woomen with icecream">
+            </picture>
+        </div>
+        
+    
+        <div class="hero__ellipse-thumb">
+            <picture>
+
+                <source 
+                srcset="./images/hero/ellipse-desktop.png" 
+                media="(min-width: 1280px)">
+                <source 
+                srcset="./images/hero/ellipse-hero.png" 
+                media="(min-width: 320px)">
+                <img src="./images/hero/ellipse-desktop.png" alt="ellipse">
+            </picture>
+
+        </div>
+        
+        <div class="hero__icecream-thumb">
+            <picture>
+                <source srcset="./images/hero/hero-icecream-desktop.png 1x, ./images/hero/hero-icecream-desktop2x.png 2x"
+                    type="image/png" media="(min-width: 1200px)">
+                <source srcset="./images/hero/hero-icecream-tablet.png 1x, ./images/hero/hero-icecream-tablet2x.png 2x"
+                    type="image/png" media="(min-width: 768px)">
+                <source srcset="./images/hero/hero-icecream-mobile.png 1x, ./images/hero/hero-icecream-mobile2x.png 2x"
+                    type="image/png" media="(min-width: 320px)">
+                <img src="./images/hero/hero-icecream-desktop2x.png" alt="icecream" sizes="">
+            </picture>
+        </div>
+    </div>
+
+    <!-- modal-window -->
+    <div class="modal-backdrop hero__modal--is-hidden" data-hero>
+        <div class="hero__modal">
+            <button class="modal-close-btn" type="button" data-hero-close>
+                <svg class="hero__modal-icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form name="subscription" action="" class="hero-form">
+                <b class="hero-form__title animate__animated animate__flash">Subscription</b>
+                <div class="hero-form__group">
+                    <input id="user-emeil" type="email" name="email" placeholder=" " class="hero-form__input">
+                    <label for="user-emeil" class="hero-form__label">user email</label>
+                </div>
+        
+                <div class="hero-form__group">
+                    <input id="user-tell" type="tel" name="tell" placeholder=" " class="hero-form__input">
+                    <label for="user-tell" class="hero-form__label">user tell</label>
+                </div>
+        
+                <div class="hero-checkbox-wrap">
+                    <input id="checkbox" type="checkbox" name="newsletter" class="checkbox-input visually-hidden" >
+                    <label for="checkbox" class="checkbox-label">Get newsletter about our products!</label>
+                </div>
+                <button class="hero-form__btn" type="submit"><span></span>subscribe</button>
+            </form>
+        </div>
+    </div>
+
+</section>
